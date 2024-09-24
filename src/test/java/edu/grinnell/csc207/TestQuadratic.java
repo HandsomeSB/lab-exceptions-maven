@@ -35,4 +35,12 @@ public class TestQuadratic {
         "The smaller root of x^2 - 3x is 0");
   } // testRootsNoC()
 
+  @Test
+  public void testSmallerRoots() {
+    assertEquals(-5, (new Quadratic(1, 3, -10)).smallerRoot(), 0.001, "The Smaller Root of a = 1, b = 3, c = -10 is -5");
+    assertEquals(-1.5, (new Quadratic(6, 1, -12)).smallerRoot(), 0.001, "The Smaller Root of a = 6, b = 1, c = -12 is -1.5");
+  }
+
+
+
 } // class TestQuadratic
